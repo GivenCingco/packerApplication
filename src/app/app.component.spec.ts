@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed} from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { DebugElement } from '@angular/core';
@@ -28,5 +28,8 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h2').textContent).toContain('Welcome to packer application')
     
   });
+
+
+
 
 });
