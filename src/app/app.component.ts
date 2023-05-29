@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  fileInput: any;
+
   outputText: string = '';
 
   input: string = '';

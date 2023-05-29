@@ -1,17 +1,36 @@
-import { TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick} from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { DebugElement } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   let el:DebugElement;
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [FormsModule],
+      declarations: [AppComponent]
+    }).compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+
+  
 
 //This our to be tested unit, we
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
+  // beforeEach(() => TestBed.configureTestingModule({
+  //   imports: [RouterTestingModule],
+  //   declarations: [AppComponent]
+  // }));
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -30,6 +49,22 @@ describe('AppComponent', () => {
   });
 
 
-
+  it('should call processInput on button click', () => {
+    // Get a reference to the button element
+    const button = fixture.debugElement.query(By.css('.process-btn')).nativeElement;
+  
+    // Set the fileInput property in the component to a mock value
+    component.fileInput = fixture.debugElement.query(By.css('#file')).nativeElement;
+  
+    // Spy on the component's processInput method
+    const processInputSpy = spyOn(component, 'processInput');
+  
+    // Simulate a click event on the button
+    button.click();
+  
+    // Verify that the processInput method was called with the expected argument
+    expect(processInputSpy).toHaveBeenCalledWith(component.fileInput);
+  });
+  
 
 });
