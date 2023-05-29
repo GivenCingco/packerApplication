@@ -37,13 +37,13 @@ To solve the package challenge, I used a dynamic programming technique known as 
 4.	Initializing the first row and column of "dp" with zeros, I accounted for the case of having no items or weight limit.
 5.	I proceeded to iterate over each item and weight limit, starting from the first item and smallest weight limit.
 6.	For each item and weight limit, I determined the maximum cost achievable by either including the current item or excluding it.
-o	If the weight of the current item was within the limit, I compared the cost of including it to the cost of excluding it.
-o	If the weight of the current item exceeded the limit, I excluded it and carried over the maximum cost from the previous row.
-o	The maximum cost for the current combination was then stored in the corresponding position of the "dp" array.
+  - If the weight of the current item was within the limit, I compared the cost of including it to the cost of excluding it.
+  - If the weight of the current item exceeded the limit, I excluded it and carried over the maximum cost from the previous row.
+  - The maximum cost for the current combination was then stored in the corresponding position of the "dp" array.
 7.	After completing the iterations, the maximum achievable cost resided in "dp[numItems][weightLimit]".
 8.	To identify the selected items contributing to the optimal solution, I traced back from "dp[numItems][weightLimit]" through the "dp" array.
-o	If an item was included in the optimal solution, I added its index to a list of selected items.
-o	I adjusted the weight limit by subtracting the weight of the selected item and moved to the previous row in the "dp" array.
+  - If an item was included in the optimal solution, I added its index to a list of selected items.
+  - I adjusted the weight limit by subtracting the weight of the selected item and moved to the previous row in the "dp" array.
 9.	Finally, I reversed the list of selected items to maintain the original order and converted it to a comma-separated string format. This string represented the final result.
 I implemented this solution within the "pack" method of the "Packer" class, taking care to address the specified constraints and handle potential error cases.
 ## Summary
