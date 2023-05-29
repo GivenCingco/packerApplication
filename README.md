@@ -63,7 +63,8 @@ In summary, the solution to the package challenge involves using dynamic program
 ![Screenshot 2023-05-29 at 19 06 58](https://github.com/GivenCingco/packerApplication/assets/50238769/01d72413-4823-4680-98cc-de8cf66531ac)
 
 # Ensuring application is production ready
-1. Ran the command below to build the app for production
+1. Went to the `angular.json` file development and changed the *buildOptimizer* to true. This option optimises the transpilation of TypeScript to javaScript by removing unused code.
+2.  Ran the command below to build the app for production
 ```
 ng build --configuration production    
 ```
