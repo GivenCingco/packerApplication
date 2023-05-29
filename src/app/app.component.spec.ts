@@ -23,23 +23,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
   });
 
-
-  
-
-//This our to be tested unit, we
-  // beforeEach(() => TestBed.configureTestingModule({
-  //   imports: [RouterTestingModule],
-  //   declarations: [AppComponent]
-  // }));
-
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-
-  //Test the app if it render
+  //Test the app if it renders a title in the h2 tag
   it('should render title in a h2 tag', async() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
@@ -47,7 +37,6 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h2').textContent).toContain('Welcome to packer application')
     
   });
-
 
   it('should call processInput on button click', () => {
     // Get a reference to the button element

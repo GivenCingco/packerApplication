@@ -76,11 +76,6 @@
     #hero p {
       width: 60%;
     }
-  
-    #hero .carousel-control-prev,
-    #hero .carousel-control-next {
-      width: 5%;
-    }
   }
   
   @media (max-width: 768px),
