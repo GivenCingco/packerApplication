@@ -58,5 +58,10 @@ In summary, the solution to the package challenge involves using dynamic program
 
 ![Screenshot 2023-05-29 at 19 04 53](https://github.com/GivenCingco/packerApplication/assets/50238769/53d900ff-770e-4f65-af79-7cf134b0b2d3)
 
+## 3rd test case checks to see if processInput is called whenever the button click event is triggered.
+
+![Screenshot 2023-05-29 at 19 06 58](https://github.com/GivenCingco/packerApplication/assets/50238769/01d72413-4823-4680-98cc-de8cf66531ac)
+
+
 
 
