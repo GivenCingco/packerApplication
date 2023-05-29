@@ -49,8 +49,14 @@ I implemented this solution within the "pack" method of the "Packer" class, taki
 ## Summary
 In summary, the solution to the package challenge involves using dynamic programming and the 0/1 Knapsack problem. The goal is to maximize the total value of items packed into a knapsack while staying within its weight limit. The approach includes parsing the input, creating a 2-dimensional array to store the maximum costs, iterating through items and weight limits, and making decisions on including or excluding items based on their weights and costs. The result is the maximum achievable cost and a list of selected items. The solution handles constraints and error cases, and the implementation is provided within the "pack" method of the "Packer" class.
 
-# App Testing
+# Application Testing
 
-## 1st test
+## 1st test case ensures that the AppComponent is created without any errors or exceptions. 
 ![Screenshot 2023-05-29 at 19 02 28](https://github.com/GivenCingco/packerApplication/assets/50238769/ad942c7e-147a-4deb-a8de-ddf063facb3e)
+
+## 2nd test case tests the application to see if it renders a title in the h2 tag
+
+![Screenshot 2023-05-29 at 19 04 53](https://github.com/GivenCingco/packerApplication/assets/50238769/53d900ff-770e-4f65-af79-7cf134b0b2d3)
+
+
 
