@@ -63,11 +63,15 @@ In summary, the solution to the package challenge involves using dynamic program
 ![Screenshot 2023-05-29 at 19 06 58](https://github.com/GivenCingco/packerApplication/assets/50238769/01d72413-4823-4680-98cc-de8cf66531ac)
 
 # Ensuring application is production ready
-1. ran the command below to build the app for production
+1. Ran the command below to build the app for production
 ```
 ng build --configuration production    
 ```
+2. Ran the command below for Angular to build the application using Ahead-of-Time compilation. AOT compilation converts the Angular application HTML and TypeScript code into efficient JavaScript code.
 
+```
+ ng build --aot 
+```
 
 
 
