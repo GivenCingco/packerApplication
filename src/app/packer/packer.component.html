@@ -8,7 +8,7 @@
             <input #fileInput type="file" class="form-control" id="file" accept=".txt">
           </div>
           <div class="d-grid mx-auto">
-            <button class="btn-get-started animate__animated animate__fadeInUp scrollto" type="button">Process File</button>
+            <button class="btn-get-started animate__animated animate__fadeInUp scrollto" type="button" (click)="processInput(fileInput)">Process File</button>
           </div>
         </div>
       </div>
@@ -17,11 +17,11 @@
   </section><!-- End Hero -->
   <section id="icon-boxes" class="icon-boxes">
     <div class="container">
-      <h2 class="animate__animated animate__fadeInDown text-center heading">Output
+      <h2 class="animate__animated animate__fadeInDown text-center heading">Output Results
         <i class="fa fa-print" aria-hidden="true"></i>
       </h2>
       <div class="mb-3">
-        <textarea class="form-control"  id="exampleFormControlTextarea1" rows="10"></textarea>
+        <textarea class="form-control" [value]="outputText" id="exampleFormControlTextarea1" rows="10"></textarea>
       </div>
     </div>
   </section>
