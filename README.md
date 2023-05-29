@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 # Project Documentation
-To solve the package challenge, I used a dynamic programming technique known as the 0/1 Knapsack problem. This problem involves maximizing the value of items packed into a knapsack while respecting its weight capacity.
+To solve the package challenge, I used a dynamic programming technique known as the 0/1 Knapsack problem. This problem involves maximizing the value of items packed into a knapsack while respecting its weight capacity. I chose this algorith approach because using dynamic programming to solve the 0/1 Knapsack issue allows you to efficiently find the optimal solution when you have a group of objects with values and weights and need to decide the best combination to maximize overall value while staying within a weight restriction.
 
 ## Here's a step-by-step breakdown of my approach:
 1.	I began by parsing the input file to extract the weight limit and the list of items, along with their respective weights and costs.
